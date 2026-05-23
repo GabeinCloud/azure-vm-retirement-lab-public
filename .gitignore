@@ -1,0 +1,41 @@
+# --- Terraform ---
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (may contain secrets and ARM IDs)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Sensitive variable files — NEVER commit
+# (terraform.tfvars.example files ARE tracked and contain placeholders)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Plan output files
+*.tfplan
+plan.out
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# --- Logs ---
+*.log
+
+# --- Local scratch ---
+scratch/
+tmp/

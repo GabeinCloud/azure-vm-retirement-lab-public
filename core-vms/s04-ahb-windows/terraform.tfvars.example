@@ -1,0 +1,5 @@
+﻿allowed_source_ip            = "*"
+admin_username               = "demouser"
+windows_admin_password       = "REPLACE-WITH-A-STRONG-PASSWORD-Az!1"
+enable_public_ips            = true
+enable_ahb_on_windows_lab_vm = false

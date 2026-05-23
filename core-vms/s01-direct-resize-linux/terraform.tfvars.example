@@ -1,0 +1,4 @@
+﻿allowed_source_ip    = "*"
+admin_username       = "demouser"
+linux_admin_password = "REPLACE-WITH-A-STRONG-PASSWORD-Az!1"
+enable_public_ips    = true
