@@ -84,5 +84,6 @@ terraform destroy -auto-approve
 
 ## References
 
+- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
 - Main guide: [OPERATIONAL-GUIDE.md › Phase 3 — Execute](../../OPERATIONAL-GUIDE.md#phase-3--execute-destructive--operates-inside-the-change-window).
 - Cross-scenario finding #1 in the [root README](../../README.md#cross-scenario-findings).

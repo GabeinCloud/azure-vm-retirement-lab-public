@@ -106,6 +106,7 @@ terraform destroy -auto-approve
 
 ## References
 
+- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
 - Microsoft: [VMSS upgrade modes](https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-policy)
 - Microsoft: [`az vmss update-instances`](https://learn.microsoft.com/cli/azure/vmss#az-vmss-update-instances)
 - Guide: [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#vmss-mini-runbook)

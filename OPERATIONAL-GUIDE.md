@@ -5,6 +5,8 @@
 >
 > *Based on Microsoft Learn documentation and the validated [Azure VM Retirement
 > Lab](README.md). May 2026.*
+>
+> 📖 **See also:** [docs/project-overview.md](docs/project-overview.md) — the original technical article and full L1 runbook this guide is condensed from.
 
 ---
 

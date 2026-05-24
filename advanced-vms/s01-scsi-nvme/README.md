@@ -103,6 +103,7 @@ terraform destroy -auto-approve
 
 ## References
 
+- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
 - Microsoft: [`enable-nvme-remote-faqs`](https://learn.microsoft.com/azure/virtual-machines/enable-nvme-remote-faqs)
 - Microsoft: [`nvme-overview`](https://learn.microsoft.com/azure/virtual-machines/nvme-overview)
 - Microsoft: [`enable-nvme-interface`](https://learn.microsoft.com/azure/virtual-machines/enable-nvme-interface)

@@ -113,6 +113,7 @@ terraform destroy -auto-approve
 
 ## References
 
+- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
 - Microsoft: [Availability Sets overview](https://learn.microsoft.com/azure/virtual-machines/availability-set-overview)
 - Microsoft: [`resize-vm`](https://learn.microsoft.com/azure/virtual-machines/sizes/resize-vm)
 - Guide: [OPERATIONAL-GUIDE.md › Phase 3](../../OPERATIONAL-GUIDE.md#phase-3--execute-destructive--operates-inside-the-change-window)

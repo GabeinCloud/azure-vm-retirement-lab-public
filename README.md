@@ -333,6 +333,7 @@ lab was built to validate. It contains:
 
 ## References
 
+- **Background article — [docs/project-overview.md](docs/project-overview.md)** — the full technical guide and L1 runbook this lab is built from.
 - [Retired VM sizes list (official)](https://learn.microsoft.com/azure/virtual-machines/sizes/retirement/retired-sizes-list)
 - [`D / Ds / Dv2 / Dsv2 / Ls` migration guide](https://learn.microsoft.com/azure/virtual-machines/migration/sizes/d-ds-dv2-dsv2-ls-series-migration-guide)
 - [Azure VMs without a local temp disk](https://learn.microsoft.com/azure/virtual-machines/azure-vms-no-temp-disk)
