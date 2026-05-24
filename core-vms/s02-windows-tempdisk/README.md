@@ -86,17 +86,24 @@ az snapshot create -g $RG -n "snap-$VM-pre-resize" --source $osDiskId
 $snapId = az snapshot show -g $RG -n "snap-$VM-pre-resize" --query id -o tsv
 az disk create -g $RG -n "$NEW-osdisk" --source $snapId --sku Premium_LRS
 
-# 6. Create new VM attached to the existing OS disk
+# 6. Create a NIC for the new VM on the existing subnet (Terraform only created
+#    the NIC for the source VM). Reuse the same VNet/subnet/NSG.
+$VNET   = "vnet-core-s02"
+$SUBNET = "subnet-vms"
+$subId  = az network vnet subnet show -g $RG --vnet-name $VNET -n $SUBNET --query id -o tsv
+az network nic create -g $RG -n "nic-$NEW" --subnet $subId
+
+# 7. Create new VM attached to the existing OS disk
 $newDiskId = az disk show -g $RG -n "$NEW-osdisk" --query id -o tsv
 az vm create -g $RG -n $NEW `
   --attach-os-disk $newDiskId `
   --os-type Windows `
   --size Standard_D2s_v5 `
   --license-type None `
-  --nics nic-$NEW `
+  --nics "nic-$NEW" `
   --public-ip-address ""
 
-# 7. Validate
+# 8. Validate
 az vm run-command invoke -g $RG -n $NEW --command-id RunPowerShellScript `
   --scripts "Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version; Get-Volume"
 ```

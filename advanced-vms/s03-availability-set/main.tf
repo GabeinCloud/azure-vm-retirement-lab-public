@@ -1,4 +1,4 @@
-﻿terraform {
+terraform {
   required_version = ">= 1.6.0"
   required_providers {
     azurerm = { source = "hashicorp/azurerm", version = "~> 4.0" }
@@ -14,15 +14,15 @@ provider "azurerm" {
 locals {
   scenario = "ADV-S03"
   common_tags = {
-    Workload             = "demo"
-    Owner                = "demo"
-    Environment          = "Demo"
-    project              = "azure-vm-retirement-runbook-lab"
-    deleteAfter          = var.delete_after
-    managedBy            = "terraform"
-    scenario             = local.scenario
+    Workload    = "demo"
+    Owner       = "demo"
+    Environment = "Demo"
+    project     = "azure-vm-retirement-runbook-lab"
+    deleteAfter = var.delete_after
+    managedBy   = "terraform"
+    scenario    = local.scenario
   }
-  vms = ["vm-adv-as-01", "vm-adv-as-02"]
+  vms = ["vm-adv-avset-01", "vm-adv-avset-02"]
 }
 
 resource "azurerm_resource_group" "this" {
@@ -120,7 +120,7 @@ resource "azurerm_network_interface" "this" {
 resource "azurerm_linux_virtual_machine" "this" {
   for_each                        = toset(local.vms)
   name                            = each.key
-  computer_name                   = replace(each.key, "vm-adv-as-", "asnode")
+  computer_name                   = replace(each.key, "vm-adv-avset-", "asnode")
   location                        = azurerm_resource_group.this.location
   resource_group_name             = azurerm_resource_group.this.name
   size                            = "Standard_D2s_v3"

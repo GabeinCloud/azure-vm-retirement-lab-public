@@ -1,4 +1,4 @@
-﻿terraform {
+terraform {
   required_version = ">= 1.6.0"
   required_providers {
     azurerm = { source = "hashicorp/azurerm", version = "~> 4.0" }
@@ -14,13 +14,13 @@ provider "azurerm" {
 locals {
   scenario = "ADV-S02"
   common_tags = {
-    Workload             = "demo"
-    Owner                = "demo"
-    Environment          = "Demo"
-    project              = "azure-vm-retirement-runbook-lab"
-    deleteAfter          = var.delete_after
-    managedBy            = "terraform"
-    scenario             = local.scenario
+    Workload    = "demo"
+    Owner       = "demo"
+    Environment = "Demo"
+    project     = "azure-vm-retirement-runbook-lab"
+    deleteAfter = var.delete_after
+    managedBy   = "terraform"
+    scenario    = local.scenario
   }
 }
 
@@ -105,8 +105,9 @@ resource "azurerm_network_interface" "this" {
   }
 }
 
-# VM Gen1 (BIOS) deliberadamente para demostrar el bloqueo al intentar
-# redimensionar a una familia Gen2-only (todas las v5+).
+# Gen1 (BIOS) VM deliberately used to demonstrate the boot boundary when
+# targeting v6/v7 NVMe-only families. Dsv5 still accepts Gen1; v6/v7 do not.
+# This scenario reproduces the Gen1 -> NVMe-only block.
 resource "azurerm_linux_virtual_machine" "this" {
   name                            = "vm-adv-gen1-blocked-01"
   computer_name                   = "gen1blocked"

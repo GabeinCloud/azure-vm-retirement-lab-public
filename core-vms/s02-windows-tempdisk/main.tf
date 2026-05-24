@@ -1,4 +1,4 @@
-﻿terraform {
+terraform {
   required_version = ">= 1.6.0"
   required_providers {
     azurerm = {
@@ -17,13 +17,13 @@ provider "azurerm" {
 locals {
   scenario = "CORE-S02"
   common_tags = {
-    Workload             = "demo"
-    Owner                = "demo"
-    Environment          = "Demo"
-    project              = "azure-vm-retirement-runbook-lab"
-    deleteAfter          = var.delete_after
-    managedBy            = "terraform"
-    scenario             = local.scenario
+    Workload    = "demo"
+    Owner       = "demo"
+    Environment = "Demo"
+    project     = "azure-vm-retirement-runbook-lab"
+    deleteAfter = var.delete_after
+    managedBy   = "terraform"
+    scenario    = local.scenario
   }
 }
 

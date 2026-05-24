@@ -1,4 +1,4 @@
-﻿terraform {
+terraform {
   required_version = ">= 1.6.0"
   required_providers {
     azurerm = { source = "hashicorp/azurerm", version = "~> 4.0" }
@@ -14,13 +14,13 @@ provider "azurerm" {
 locals {
   scenario = "CORE-S03"
   common_tags = {
-    Workload             = "demo"
-    Owner                = "demo"
-    Environment          = "Demo"
-    project              = "azure-vm-retirement-runbook-lab"
-    deleteAfter          = var.delete_after
-    managedBy            = "terraform"
-    scenario             = local.scenario
+    Workload    = "demo"
+    Owner       = "demo"
+    Environment = "Demo"
+    project     = "azure-vm-retirement-runbook-lab"
+    deleteAfter = var.delete_after
+    managedBy   = "terraform"
+    scenario    = local.scenario
   }
 }
 
@@ -110,7 +110,7 @@ resource "azurerm_linux_virtual_machine" "this" {
   computer_name                   = "lnxtemp01"
   location                        = azurerm_resource_group.this.location
   resource_group_name             = azurerm_resource_group.this.name
-  size                            = "Standard_D2s_v3"
+  size                            = "Standard_D2ds_v5"
   admin_username                  = var.admin_username
   admin_password                  = var.linux_admin_password
   disable_password_authentication = false
