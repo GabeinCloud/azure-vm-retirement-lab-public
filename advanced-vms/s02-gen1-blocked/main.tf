@@ -133,7 +133,7 @@ resource "azurerm_linux_virtual_machine" "this" {
     storage_account_type = "Standard_LRS"
   }
 
-  # Imagen Gen1 (sin sufijo -gen2)
+  # Gen1 image, without the -gen2 suffix.
   source_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"

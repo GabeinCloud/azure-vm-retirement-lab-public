@@ -56,7 +56,7 @@ This article addresses a specific question we hear regularly from customers and 
 | `D`, `Ds`, `Dv2`, `Dsv2`, `Ls`             | 2028-05-01      |
 | `Av2`, `Amv2`, `Bv1`, `F`, `Fs`, `Fsv2`, `G`, `Gs`, `Lsv2` | 2028-11-15 |
 | `NVv3`, `NVv4`                             | 2026-09-30      |
-| `NP`, `HBv2`                               | 2027-05-31      |
+| `NP`, `HBv2`, `HC`                         | 2027-05-31      |
 | `M192` SKUs (`Msv2` / `Mdsv2`)             | 2027-03-31      |
 
 > **Source:** [Retired sizes list](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/retirement/retired-sizes-list)
@@ -1085,11 +1085,11 @@ az vmss extension list \
   --output table
 
 # View extensions applied to a specific instance
-az vmss list-instance-view \
+az vmss get-instance-view \
   --resource-group <my-rg> \
   --name <my-vmss> \
   --instance-id <0> \
-  --query "extensions" \
+  --query "extensions[].{name:name, status:statuses[-1].code}" \
   --output table
 ```
 
