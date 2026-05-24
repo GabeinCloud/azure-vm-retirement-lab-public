@@ -15,7 +15,7 @@ locals {
   scenario = "ADV-S02"
   common_tags = {
     Workload    = "demo"
-    Owner       = "demo"
+    Owner       = var.owner
     Environment = "Demo"
     project     = "azure-vm-retirement-runbook-lab"
     deleteAfter = var.delete_after
@@ -105,8 +105,7 @@ resource "azurerm_network_interface" "this" {
   }
 }
 
-# Gen1 (BIOS) VM deliberately used to demonstrate the boot boundary when
-# targeting v6/v7 NVMe-only families. Dsv5 still accepts Gen1; v6/v7 do not.
+# Gen1 (BIOS) VM deliberately used to demonstrate the boot boundary when targeting v6/v7 NVMe-only families. Dsv5 still accepts Gen1; v6/v7 do not.
 # This scenario reproduces the Gen1 -> NVMe-only block.
 resource "azurerm_linux_virtual_machine" "this" {
   name                            = "vm-adv-gen1-blocked-01"

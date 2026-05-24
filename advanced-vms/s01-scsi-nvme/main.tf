@@ -15,7 +15,7 @@ locals {
   scenario = "ADV-S01"
   common_tags = {
     Workload    = "demo"
-    Owner       = "demo"
+    Owner       = var.owner
     Environment = "Demo"
     project     = "azure-vm-retirement-runbook-lab"
     deleteAfter = var.delete_after
@@ -105,9 +105,10 @@ resource "azurerm_network_interface" "this" {
   }
 }
 
-# Gen2 Linux VM, SCSI controller. Punto de partida para resize a SKU NVMe-only
-# (p.ej. Standard_D2as_v6 / familia LSv4) que requiere reinstalar/forzar el
-# controller type a NVMe.
+# Gen2 Linux VM, SCSI controller.
+# Starting point for resize to an NVMe-only SKU
+# (for example Standard_D2as_v6 / LSv4 family), which requires
+# setting the disk controller type to NVMe.
 resource "azurerm_linux_virtual_machine" "this" {
   name                            = "vm-adv-nvme-gen2-01"
   computer_name                   = "nvme01"

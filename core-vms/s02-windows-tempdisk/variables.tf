@@ -30,5 +30,5 @@ variable "windows_admin_password" {
 
 variable "enable_public_ips" {
   type    = bool
-  default = true
+  default = false
 }

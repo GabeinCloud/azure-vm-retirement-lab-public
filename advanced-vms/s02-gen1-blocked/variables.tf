@@ -34,5 +34,5 @@ variable "admin_ssh_public_key_path" {
 
 variable "enable_public_ips" {
   type    = bool
-  default = true
+  default = false
 }
