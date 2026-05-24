@@ -101,3 +101,12 @@ terraform destroy -auto-approve
 - Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Microsoft: [`hybrid-use-benefit-licensing`](https://learn.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing)
 - Guide: [OPERATIONAL-GUIDE.md › Windows licensing](../../OPERATIONAL-GUIDE.md#windows-licensing-when-leaving-b-series-compute-cost-and-ahb)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [CORE-S02 · Windows con temp disk](../s02-windows-tempdisk/README.md)

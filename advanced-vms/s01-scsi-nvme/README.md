@@ -108,3 +108,13 @@ terraform destroy -auto-approve
 - Microsoft: [`nvme-overview`](https://learn.microsoft.com/azure/virtual-machines/nvme-overview)
 - Microsoft: [`enable-nvme-interface`](https://learn.microsoft.com/azure/virtual-machines/enable-nvme-interface)
 - Guide: [OPERATIONAL-GUIDE.md › SCSI vs NVMe](../../OPERATIONAL-GUIDE.md#scsi-vs-nvme-controller-the-invisible-trap-when-migrating-to-v6-or-v7)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [ADV-S02 · Gen1 boot boundary](../s02-gen1-blocked/README.md)
+  - [CORE-S01 · Linux resize directo](../../core-vms/s01-direct-resize-linux/README.md)

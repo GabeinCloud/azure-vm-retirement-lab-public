@@ -91,3 +91,12 @@ terraform destroy -auto-approve
 - Microsoft: [`nvme-overview`](https://learn.microsoft.com/azure/virtual-machines/nvme-overview) (Gen1 not supported on v6)
 - Microsoft: [Generation 1 vs Generation 2 VMs](https://learn.microsoft.com/azure/virtual-machines/generation-2)
 - Guide: [OPERATIONAL-GUIDE.md › Stop conditions](../../OPERATIONAL-GUIDE.md#-target-sku-is-nvme-only-and-the-vm-is-gen1)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [ADV-S01 · SCSI → NVMe](../s01-scsi-nvme/README.md)

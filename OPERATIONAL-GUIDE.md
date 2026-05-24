@@ -34,7 +34,7 @@ The scenarios under [`core-vms/`](core-vms) and [`advanced-vms/`](advanced-vms) 
 
 ---
 
-# Part 1 — Technical article
+## Part 1 — Technical article
 
 ## Why Microsoft retires VM series — and what that means for you
 
@@ -1162,3 +1162,20 @@ VM migrations due to series retirement look trivial until they don't. The resize
 > Article based on official Microsoft Learn documentation, official Azure tools and operational guides referenced by Microsoft · **May 2026**
 >
 > See also: [README](README.md) · [diagrams](docs/diagrams.md)
+
+---
+
+## Quick links
+
+- [Volver al README principal](README.md)
+- Escenarios core:
+  - [CORE-S01 · Linux resize directo](core-vms/s01-direct-resize-linux/README.md)
+  - [CORE-S02 · Windows con temp disk](core-vms/s02-windows-tempdisk/README.md)
+  - [CORE-S03 · Linux con temp disk](core-vms/s03-linux-tempdisk/README.md)
+  - [CORE-S04 · Azure Hybrid Benefit](core-vms/s04-ahb-windows/README.md)
+- Escenarios avanzados:
+  - [ADV-S01 · SCSI → NVMe](advanced-vms/s01-scsi-nvme/README.md)
+  - [ADV-S02 · Gen1 boot boundary](advanced-vms/s02-gen1-blocked/README.md)
+  - [ADV-S03 · Availability Set](advanced-vms/s03-availability-set/README.md)
+  - [ADV-S04 · Proximity Placement Group](advanced-vms/s04-ppg/README.md)
+  - [ADV-S05 · VMSS](advanced-vms/s05-vmss/README.md)

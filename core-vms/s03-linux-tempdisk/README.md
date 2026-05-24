@@ -104,3 +104,13 @@ terraform destroy -auto-approve
 - Microsoft: [`azure-vms-no-temp-disk`](https://learn.microsoft.com/azure/virtual-machines/azure-vms-no-temp-disk)
 - Microsoft: [`waagent.conf` reference (`ResourceDisk.EnableSwap`)](https://learn.microsoft.com/azure/virtual-machines/extensions/agent-linux)
 - Guide: [OPERATIONAL-GUIDE.md › Temp disk](../../OPERATIONAL-GUIDE.md#temp-disk-does-the-target-have-one-or-not)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [CORE-S01 · Linux resize directo](../s01-direct-resize-linux/README.md)
+  - [CORE-S02 · Windows con temp disk](../s02-windows-tempdisk/README.md)

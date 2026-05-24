@@ -110,3 +110,13 @@ terraform destroy -auto-approve
 - Microsoft: [VMSS upgrade modes](https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-policy)
 - Microsoft: [`az vmss update-instances`](https://learn.microsoft.com/cli/azure/vmss#az-vmss-update-instances)
 - Guide: [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#mini-runbook-virtual-machine-scale-sets-vmss)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [ADV-S03 · Availability Set](../s03-availability-set/README.md)
+  - [ADV-S04 · Proximity Placement Group](../s04-ppg/README.md)

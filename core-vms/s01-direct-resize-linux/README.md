@@ -87,3 +87,14 @@ terraform destroy -auto-approve
 - Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Main guide: [OPERATIONAL-GUIDE.md › Phase 3 — Execute](../../OPERATIONAL-GUIDE.md#phase-2--execute-the-resize).
 - Cross-scenario finding #1 in the [root README](../../README.md#cross-scenario-findings).
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [CORE-S02 · Windows con temp disk](../s02-windows-tempdisk/README.md)
+  - [CORE-S03 · Linux con temp disk](../s03-linux-tempdisk/README.md)
+  - [ADV-S01 · SCSI → NVMe](../../advanced-vms/s01-scsi-nvme/README.md)

@@ -135,3 +135,14 @@ Remove-Item .terraform -Recurse -Force
 - Microsoft: [`change-drive-letter`](https://learn.microsoft.com/azure/virtual-machines/windows/change-drive-letter)
 - Microsoft: [`azure-vms-no-temp-disk`](https://learn.microsoft.com/azure/virtual-machines/azure-vms-no-temp-disk)
 - Guide: [OPERATIONAL-GUIDE.md › Temp disk](../../OPERATIONAL-GUIDE.md#temp-disk-does-the-target-have-one-or-not)
+
+---
+
+## Cross-links
+
+- [Volver al catálogo de escenarios](../../README.md#scenario-catalog)
+- [Guía operacional y técnica](../../OPERATIONAL-GUIDE.md)
+- Escenarios relacionados:
+  - [CORE-S01 · Linux resize directo](../s01-direct-resize-linux/README.md)
+  - [CORE-S03 · Linux con temp disk](../s03-linux-tempdisk/README.md)
+  - [CORE-S04 · Azure Hybrid Benefit](../s04-ahb-windows/README.md)
