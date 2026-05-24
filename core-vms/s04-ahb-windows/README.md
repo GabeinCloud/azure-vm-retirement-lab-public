@@ -98,6 +98,6 @@ terraform destroy -auto-approve
 
 ## References
 
-- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
+- Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Microsoft: [`hybrid-use-benefit-licensing`](https://learn.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing)
-- Guide: [OPERATIONAL-GUIDE.md › Windows licensing](../../OPERATIONAL-GUIDE.md#3-windows-licensing-when-leaving-the-b-series)
+- Guide: [OPERATIONAL-GUIDE.md › Windows licensing](../../OPERATIONAL-GUIDE.md#windows-licensing-when-leaving-b-series-compute-cost-and-ahb)

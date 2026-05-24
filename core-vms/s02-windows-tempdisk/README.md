@@ -124,7 +124,7 @@ Remove-Item .terraform -Recurse -Force
 
 ## References
 
-- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
+- Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Microsoft: [`change-drive-letter`](https://learn.microsoft.com/azure/virtual-machines/windows/change-drive-letter)
 - Microsoft: [`azure-vms-no-temp-disk`](https://learn.microsoft.com/azure/virtual-machines/azure-vms-no-temp-disk)
-- Guide: [OPERATIONAL-GUIDE.md › Temp disk](../../OPERATIONAL-GUIDE.md#1-temp-disk-present-or-absent)
+- Guide: [OPERATIONAL-GUIDE.md › Temp disk](../../OPERATIONAL-GUIDE.md#temp-disk-does-the-target-have-one-or-not)

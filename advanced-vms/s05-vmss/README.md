@@ -11,7 +11,7 @@
 - `az vmss update-instances --instance-ids …` recycles selected instances onto
   the new model, with full control over the batch size.
 - The `Rolling` and `Automatic` modes behave differently — see the
-  [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#vmss-mini-runbook).
+  [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#mini-runbook-virtual-machine-scale-sets-vmss).
 
 ## Architecture
 
@@ -106,7 +106,7 @@ terraform destroy -auto-approve
 
 ## References
 
-- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
+- Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Microsoft: [VMSS upgrade modes](https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-policy)
 - Microsoft: [`az vmss update-instances`](https://learn.microsoft.com/cli/azure/vmss#az-vmss-update-instances)
-- Guide: [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#vmss-mini-runbook)
+- Guide: [OPERATIONAL-GUIDE.md › VMSS mini-runbook](../../OPERATIONAL-GUIDE.md#mini-runbook-virtual-machine-scale-sets-vmss)

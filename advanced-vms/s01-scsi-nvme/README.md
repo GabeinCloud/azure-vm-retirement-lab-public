@@ -103,8 +103,8 @@ terraform destroy -auto-approve
 
 ## References
 
-- Background article: [docs/project-overview.md](../../docs/project-overview.md) — the source technical guide that motivated this lab.
+- Background article: [OPERATIONAL-GUIDE.md](../../OPERATIONAL-GUIDE.md) — full master technical guide and L1 runbook for this lab.
 - Microsoft: [`enable-nvme-remote-faqs`](https://learn.microsoft.com/azure/virtual-machines/enable-nvme-remote-faqs)
 - Microsoft: [`nvme-overview`](https://learn.microsoft.com/azure/virtual-machines/nvme-overview)
 - Microsoft: [`enable-nvme-interface`](https://learn.microsoft.com/azure/virtual-machines/enable-nvme-interface)
-- Guide: [OPERATIONAL-GUIDE.md › SCSI vs NVMe](../../OPERATIONAL-GUIDE.md#2-scsi-vs-nvme-controller--the-invisible-trap-when-moving-to-v6-or-v7)
+- Guide: [OPERATIONAL-GUIDE.md › SCSI vs NVMe](../../OPERATIONAL-GUIDE.md#scsi-vs-nvme-controller-the-invisible-trap-when-migrating-to-v6-or-v7)
